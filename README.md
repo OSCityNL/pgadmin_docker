@@ -6,6 +6,7 @@ PhpPgAdmin running in a container to easy maintain a Postgres database
 
 I mostly use docker-compose.yml to integrate pgadmin into the stack. Of course the stack needs a Postgres container!
 
+```
   pgadmin:
     restart: always
     container_name: pgadmin_container
@@ -20,6 +21,6 @@ I mostly use docker-compose.yml to integrate pgadmin into the stack. Of course t
       - "8000:80"
     links:
       - db
-
+```
 
 
